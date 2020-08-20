@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import TodoModel from '../models/TodoModel';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from './mutation-types';
 
 Vue.use(Vuex)
 
@@ -13,8 +14,8 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
-    increment: (state) => state.count++,
-    decrement: (state) => state.count--
+    [INCREMENT_COUNTER]: (state) => state.count++,
+    [DECREMENT_COUNTER]: (state) => state.count--
   },
   actions: {
   },
