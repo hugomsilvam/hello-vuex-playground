@@ -1,6 +1,7 @@
 <template>
   <div>
-    <span>{{count}}</span>
+    <h2>Counter</h2>
+    <span>{{counter}}</span>
     <button @click="increment">+</button>
     <button @click="decrement">-</button>
   </div>
@@ -10,7 +11,7 @@
 import { Vue, Prop, Component } from "vue-property-decorator";
 import { mapState } from "vuex";
 @Component({
-  computed: mapState(["count"]),
+  computed: mapState({ counter: "count" }),
 })
 export default class Counter extends Vue {
   counter!: number;
