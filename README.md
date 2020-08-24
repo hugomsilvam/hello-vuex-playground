@@ -1,4 +1,5 @@
-# hello-vuex
+# hello-vuex-playground
+Playground project following vuex tutoriais
 
 ## Project setup
 ```
